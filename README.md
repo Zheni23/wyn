@@ -20,9 +20,16 @@ The current version reads "YES" and "NO," but the future "Mold" is universal. Up
 * Temporal Logging: Exporting data to CSV to map how events change over time, like a digital horoscope.
 * Universal Input: Adapting the OCR to read any list, any game, or any stream regardless of language or font.
 
-
 We are moving from counting words to mapping movements. 
 
-# 🌌 Whaa Yes No
+🌌 Whaa Yes No
 
 Observe the flow. Track the Now.
+
+
+Setup & Run:
+1. Engine: Install Tesseract OCR to C:\Program Files\Tesseract-OCR\tesseract.exe.
+2. Environment: Open CMD → pip install Pillow pytesseract opencv-python numpy pyinstaller
+3. Files: Place main.py, icon.png (for UI), and icon.ico (for EXE) in one folder.
+4. Build: In CMD folder → pyinstaller --noconsole --onefile --icon=icon.ico --add-data "icon.png;." main.py
+5. Launch: Run main.exe from the /dist folder.
